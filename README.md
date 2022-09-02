@@ -19,7 +19,5 @@
 
 ![diegoacosta127's Stats](https://github-readme-stats.vercel.app/api?username=Diegoacosta127&show_icons=true&theme=blue-green&hide_border=true) 
 
-<img src="https://activity-graph.herokuapp.com/graph?username=diegoacosta127&theme=gotham&hide_border=true&area=true&custom_title=diegoacosta127's contribution graph">
-
 ## 🥸 Have fun!!!
 ![Jokes Card](https://readme-jokes.vercel.app/api)
