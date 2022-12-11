@@ -11,8 +11,6 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/diegoacosta127?logoColor=db233d&style=social)](https://github.com/Diegoacosta127?tab=followers)
 
-![Profile views](https://komarev.com/ghpvc/?username=diegoacosta127&color=db233d&style=plastic&logoColor=fafafa)
-
 ![Languages's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Diegoacosta127&langs_count=15&layout=compact&theme=blue-green&hide_border=true)
 
 <img src="https://github-readme-streak-stats.herokuapp.com?user=Diegoacosta127&theme=blue-green&hide_border=true&" alt="Diegoacosta127">
