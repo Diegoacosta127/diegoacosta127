@@ -1,0 +1,345 @@
+/* style for index.html */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+
+/* style for a smooth transition */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* style for body nav class=topbar */
+
+.topbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #ffffff42;
+    background-image: linear-gradient(90deg, #ff000069, #00ff0069, #0000ff69);
+    text-align: center;
+    z-index: 1;
+}
+
+/* style for .topbar ul */
+
+.topbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* style for .topbar ul li */
+
+.topbar ul li {
+    display: inline-block;
+}
+
+/* style for .topbar ul li a */
+
+.topbar ul li a, .topbar ul li label {
+    color: #000;
+    font-size: larger;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* style for .topbar ul li a:hover */
+
+.topbar ul li a:hover{
+    background-image: linear-gradient(90deg, #ff000069,
+                                #00ff0069, #0000ff69);
+    color: #fff;
+}
+
+.topbar ul li label:hover {
+    color: #fff;
+}
+
+.topbar #langSelector, #mode {
+    background: none;
+    border: solid 1px #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.topbar #langSelector:hover, #mode:hover {
+    background-color: #00000069;
+    background-image: linear-gradient(90deg, #ff000069, #00ff0069, #0000ff69);
+    color: #fff;
+}
+
+/* style for up button*/
+
+.up {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    left: 0;
+    opacity: 69%;
+    margin-left: 97%;
+    width: 3%;
+}
+
+.up img {
+    margin-left: 89%;
+    width: 169%;
+}
+
+/* style for header */
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/orion_nebula.jpg");
+    background-size: cover;
+    width: 100%;
+    color: #fafafa;
+    padding: 1em 0;
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+}
+
+/* style for header img */
+
+header div img {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 30%;
+    border-radius: 50% ;
+    z-index: 2;
+}
+
+header div.presentation {
+    font-size: large;
+    background-image: linear-gradient(135deg, #ff000069, #00ff0069, #0000ff69);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10%;
+    text-shadow: #000 5px 5px 3px;
+}
+
+/* style for main */
+
+main {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 1em;
+}
+
+/* style for class .whoami*/
+
+.whoami {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* style for class .whoami .speech */
+
+.whoami .speech{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 3em;
+}
+
+/* style for class .whoami img */
+
+.whoami img {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 30%;
+    border-radius: 1%;
+}
+
+/* style for class skills */
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+/* style for class pic-ctn*/
+
+.pic-ctn {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  7% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  13% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 22s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+img:nth-child(6) {
+    animation-delay: 10s;
+}
+img:nth-child(7) {
+    animation-delay: 12s;
+}
+img:nth-child(8) {
+    animation-delay: 14s;
+}
+img:nth-child(9) {
+    animation-delay: 16s;
+}
+img:nth-child(10) {
+    animation-delay: 18s;
+}
+img:nth-child(11) {
+    animation-delay: 20s;
+}
+
+/* style for class .networks */
+
+.networks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+/* style for class .networks img */
+
+.networks a {
+	display: flex;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	padding: 0.5em;
+}
+
+/* style for footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* style for form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* style for form .field */
+
+.field label {
+    margin:20px 0;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+
+.field span {
+    color: #000000;
+    font-size: 1.5em;
+    padding:10px;
+    position: absolute;
+    pointer-events: none;
+    left:0;
+    top:0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+}
+
+.field input {
+    padding:10px;
+}
+    
+.field input:focus + span, input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.6) translateY(-50%) translateX(-30%);
+}
+/* For IE Browsers*/
+.field input:focus + span, input:not(:-ms-input-placeholder) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+.field .error input {
+    border: 1px solid red;
+}
+
+/* style for form textarea*/
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding:10px;
+    resize: none;
+}
+
+/* style for submit button */
+
+.submit input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    padding:10px;
+    color: #000;
+    background-image: linear-gradient(90deg, #ff000069, #00ff0069, #0000ff69);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
