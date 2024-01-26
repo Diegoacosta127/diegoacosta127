@@ -1,4 +1,3 @@
-/* style for index.html */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -13,8 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* style for body nav class=topbar */
-
 .topbar {
     position: sticky;
     position: -webkit-sticky;
@@ -25,21 +22,15 @@ html {
     z-index: 1;
 }
 
-/* style for .topbar ul */
-
 .topbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* style for .topbar ul li */
-
 .topbar ul li {
     display: inline-block;
 }
-
-/* style for .topbar ul li a */
 
 .topbar ul li a, .topbar ul li label {
     color: #000;
@@ -48,8 +39,6 @@ html {
     padding: 10px;
     text-decoration: none;
 }
-
-/* style for .topbar ul li a:hover */
 
 .topbar ul li a:hover{
     background-image: linear-gradient(90deg, #ff000069,
@@ -74,8 +63,6 @@ html {
     color: #fff;
 }
 
-/* style for up button*/
-
 .up {
     position: sticky;
     position: -webkit-sticky;
@@ -91,7 +78,6 @@ html {
     width: 169%;
 }
 
-/* style for header */
 header {
     display: flex;
     flex-direction: column;
@@ -108,8 +94,6 @@ header div {
     align-items: center;
     padding: 5%;
 }
-
-/* style for header img */
 
 header div img {
     display: flex;
@@ -133,15 +117,11 @@ header div.presentation {
     text-shadow: #000 5px 5px 3px;
 }
 
-/* style for main */
-
 main {
     margin: 0 auto;
     max-width: 90%;
     padding: 1em;
 }
-
-/* style for class .whoami*/
 
 .whoami {
     display: flex;
@@ -151,16 +131,12 @@ main {
     flex-direction: row;
 }
 
-/* style for class .whoami .speech */
-
 .whoami .speech{
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 3em;
 }
-
-/* style for class .whoami img */
 
 .whoami img {
     display: flex;
@@ -170,15 +146,11 @@ main {
     border-radius: 1%;
 }
 
-/* style for class skills */
-
 .skills {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-
-/* style for class pic-ctn*/
 
 .pic-ctn {
     position: relative;
@@ -241,8 +213,6 @@ img:nth-child(11) {
     animation-delay: 20s;
 }
 
-/* style for class .networks */
-
 .networks {
 	display: flex;
 	flex-wrap: wrap;
@@ -252,8 +222,6 @@ img:nth-child(11) {
 	padding: 1em;
 }
 
-/* style for class .networks img */
-
 .networks a {
 	display: flex;
 	margin: 0 auto;
@@ -262,16 +230,32 @@ img:nth-child(11) {
 	padding: 0.5em;
 }
 
-/* style for footer */
-
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #333;
     color: #fff;
     padding: 1em 0;
     text-align: center;
 }
 
-/* style for form */
+footer .en, .es {
+    margin: 1.5%;
+    margin-top: 0%;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.badges p {
+    margin-inline: 4%;
+}
 
 form {
     display: flex;
@@ -279,8 +263,6 @@ form {
     margin: 0 auto;
     padding: 1em;
 }
-
-/* style for form .field */
 
 .field label {
     margin:20px 0;
@@ -311,7 +293,9 @@ form {
     opacity:1;
     transform: scale(0.6) translateY(-50%) translateX(-30%);
 }
+
 /* For IE Browsers*/
+
 .field input:focus + span, input:not(:-ms-input-placeholder) + span {
     opacity:1;
     transform: scale(0.75) translateY(-100%) translateX(-30px);
@@ -321,16 +305,12 @@ form {
     border: 1px solid red;
 }
 
-/* style for form textarea*/
-
 textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     padding:10px;
     resize: none;
 }
-
-/* style for submit button */
 
 .submit input {
     font-family: Arial, Helvetica, sans-serif;

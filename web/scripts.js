@@ -195,6 +195,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
 
+    const myAlert = () => {
+      if (select.value === 'en') {
+        return 'Thank you! Your message has been sent :)';
+      } else {
+        return '¡Gracias! Su mensaje ha sido enviado :)';
+      }
+    };
+
+    const clear = () => {
+      document.getElementsByClassName('mail')[0].childNodes[1].value = '';
+      document.getElementsByClassName('mail')[1].childNodes[1].value = '';
+      document.getElementsByClassName('name')[0].childNodes[1].value = '';
+      document.getElementsByClassName('name')[1].childNodes[1].value = '';
+      messageEn.value = '';
+      messageEs.value = '';
+    };
+
     if ((checkEmailEn() && checkNameEn()) ||
      (checkEmailEs() && checkNameEs())) {
       location.replace('#');
@@ -206,7 +223,10 @@ document.addEventListener('DOMContentLoaded', function () {
         Body: 'De: ' + sendname() +
           '<br>Mail: ' + sender() +
           '<br>' + sendmsg()
-      }).then();
+      }).then(
+        alert(myAlert())
+      );
+      clear();
     } else {}
   });
 });
