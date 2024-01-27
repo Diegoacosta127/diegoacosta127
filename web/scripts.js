@@ -57,16 +57,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  let myFlag = true;
+
   function switchMode () {
-    const modeValue = mode.value;
-    if (modeValue === 'light') {
+    if (myFlag) {
+      mode.textContent = '☀️';
       myMode('#fafafa', '#121212');
-    } else if (modeValue === 'dark') {
+    } else {
+      mode.textContent = '🌙';
       myMode('#121212', '#fafafa');
     }
+    myFlag = !myFlag;
   }
 
-  mode.addEventListener('change', switchMode);
+  document.getElementById('mode').addEventListener('click', switchMode);
 
   switchMode();
 
