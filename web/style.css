@@ -303,14 +303,7 @@ form {
     
 .field input:focus + span, input:not(:placeholder-shown) + span {
     opacity:1;
-    transform: scale(0.6) translateY(-50%) translateX(-30%);
-}
-
-/* For IE Browsers*/
-
-.field input:focus + span {
-    opacity:1;
-    transform: scale(0.75) translateY(-100%) translateX(-30px);
+    transform: scale(0.7) translateY(-110%) translateX(-20%);
 }
 
 .field .error input {

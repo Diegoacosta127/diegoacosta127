@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     myFlag = !myFlag;
   }
 
-  document.getElementById('mode').addEventListener('click', switchMode);
+  mode.addEventListener('click', switchMode);
 
   switchMode();
 
