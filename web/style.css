@@ -191,7 +191,7 @@ main {
   height: 100%;
   left: calc(50% - 100px);
   opacity: 0;
-  animation: display 22s infinite;
+  animation: display 24s infinite;
 }
 
 img:nth-child(2) {
@@ -223,6 +223,9 @@ img:nth-child(10) {
 }
 img:nth-child(11) {
     animation-delay: 20s;
+}
+img:nth-child(12) {
+    animation-delay: 22s;
 }
 
 .networks {
