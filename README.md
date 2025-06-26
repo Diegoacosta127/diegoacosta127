@@ -7,7 +7,9 @@
 <h2 align="center">What I do?</h2>
 
 <p align="center">
+  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,c,python,postgresql,bash,git,linux,mint,mysql,vim,emacs,html,css,javascript"/>
+  </a>
 </p>
 
 <div align="center">
