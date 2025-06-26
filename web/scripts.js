@@ -57,15 +57,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function updatePdf (mode) {
+    const pdfs = document.querySelectorAll('#resume object');
+
+    pdfs.forEach(obj => {
+      const lang = obj.classList.contains('en') ? 'en' : 'es';
+      const newPdf = (mode === 'dark')
+        ? `pdf/CV_Diego_Acosta_${lang}_d.pdf`
+        : `pdf/CV_Diego_Acosta_${lang}.pdf`;
+      obj.setAttribute('data', newPdf);
+    });
+  }
+
   let myFlag = true;
 
   function switchMode () {
     if (myFlag) {
       mode.textContent = '☀️';
       myMode('#fafafa', '#121212');
+      updatePdf('light');
     } else {
       mode.textContent = '🌙';
       myMode('#121212', '#fafafa');
+      updatePdf('dark');
     }
     myFlag = !myFlag;
   }
